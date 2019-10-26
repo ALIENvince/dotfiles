@@ -182,8 +182,9 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
-colorscheme sublimemonokai
-" colorscheme monokai
+"colorscheme sublimemonokai
+"colorscheme monokai
+colorscheme atom-dark
 set termguicolors
 
 " Open the quickfix window if there are errors, or close it if there are no
