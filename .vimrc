@@ -9,10 +9,11 @@ filetype off
 
 " vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
-      silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-        autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
-    endif
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
+endif
+
 call plug#begin('~/.vim/plugged')
 " plug vim-plug itself to get access to the help page
 " :help plug-options
@@ -83,15 +84,15 @@ set encoding=utf-8
 set wrap
 set textwidth=79
 set formatoptions=tcqrn1
-set tabstop=12
+set tabstop=8
 set shiftwidth=4
 set softtabstop=4
 set smarttab
-set expandtab
+set noexpandtab
 set noshiftround
 
 " Cursor motion
-set scrolloff=8
+set scrolloff=16
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
@@ -180,6 +181,11 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 
 " Color scheme (terminal)
+if empty(glob('~/.vim/colors/atom-dark.vim'))
+    silent !curl -fLo ~/.vim/colors/atom-dark.vim --create-dirs
+        \ https://raw.githubusercontent.com/ALIENvince/dotfiles/master/atom-dark.vim
+endif  
+
 set t_Co=256
 set background=dark
 "colorscheme sublimemonokai
