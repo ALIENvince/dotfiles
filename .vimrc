@@ -39,9 +39,9 @@ call plug#end()
 
 
 "UltiSnips Mapping
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " -----------------------------------------
 " General parameters
@@ -191,7 +191,9 @@ set background=dark
 "colorscheme sublimemonokai
 "colorscheme monokai
 colorscheme atom-dark
-set termguicolors
+if version >800
+    set termguicolors
+endif
 
 " Open the quickfix window if there are errors, or close it if there are no
 " errors left
