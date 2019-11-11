@@ -36,7 +36,11 @@ Plug 'https://github.com/tpope/vim-unimpaired'
 
 Plug 'https://github.com/tpope/vim-vinegar'
 
-Plug 'https://github.com/ludovicchabant/vim-gutentags'
+" Plug 'https://github.com/ludovicchabant/vim-gutentags'
+
+" Plug 'https://github.com/powerline/powerline'
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -224,3 +228,34 @@ nmap [q <Plug>(qf_qf_previous)
 nmap ]q <Plug>(qf_qf_next)
 nmap [l <Plug>(qf_loc_previous)
 nmap ]l <Plug>(qf_loc_next)
+
+" Vim airline options
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'papercolor'
+if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
+
+    " unicode symbols
+     let g:airline_left_sep = '»'
+     let g:airline_left_sep = '▶'
+     let g:airline_right_sep = '«'
+     let g:airline_right_sep = '◀'
+     let g:airline_symbols.linenr = '␊'
+     let g:airline_symbols.linenr = '␤'
+     let g:airline_symbols.linenr = '¶'
+     let g:airline_symbols.branch = '⎇'
+     let g:airline_symbols.paste = 'ρ'
+     let g:airline_symbols.paste = 'Þ'
+     let g:airline_symbols.paste = '∥'
+     let g:airline_symbols.whitespace = 'Ξ'
+    
+     " airline symbols
+     let g:airline_left_sep = ''
+     let g:airline_left_alt_sep = ''
+     let g:airline_right_sep = ''
+     let g:airline_right_alt_sep = ''
+     let g:airline_symbols.branch = ''
+     let g:airline_symbols.readonly = ''
+     let g:airline_symbols.linenr = ''
