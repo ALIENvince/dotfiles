@@ -36,6 +36,8 @@ Plug 'https://github.com/tpope/vim-unimpaired'
 
 Plug 'https://github.com/tpope/vim-vinegar'
 
+Plug 'https://github.com/tpope/vim-fugitive'
+
 " Plug 'https://github.com/ludovicchabant/vim-gutentags'
 
 " Plug 'https://github.com/powerline/powerline'
