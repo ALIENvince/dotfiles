@@ -23,8 +23,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 
 " Snippets plugins (not configured yet)
-Plug 'https://github.com/SirVer/ultisnips'
-Plug 'https://github.com/honza/vim-snippets'
+"Plug 'https://github.com/SirVer/ultisnips'
+"Plug 'https://github.com/honza/vim-snippets'
 
 " Quickfix plugin
 Plug 'https://github.com/romainl/vim-qf'
